@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* 全体の設定 */
+html {
+  scroll-behavior: smooth; /* スムーズスクロール */
+}
+
+body {
+  text-align: center; /* ページ全体中央揃え */
+}
+
+.main {
+  background: #e8d9bf;
+}
+
+section,
+footer {
+  text-align: left; /* コンテンツ左揃え */
+  margin: 0 auto;
+}
+
+.content_center {
+  text-align: center; /* コンテンツ中央揃え */
+}
+
+.content_width {
+  max-width: 1000px; /* コンテンツ幅1000px  */
+  padding: 0 10px; /* 横幅の最大値から10pxパディングをとってあげる */
+}
+
+/* ヘッダー */
+.header_logo {
+  width: 226.7px;
+  padding-top: 19px;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3.12%; /* widthの外側に余白 */
+  padding-right: 6.45%; /* widthの外側に余白 */
+  position: absolute; /* 画面全体を基準に */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* paddingをとってwidthが100%なのでヘッダーとnavが内側に表示されるようにする（paddingとborderを幅と高さに含める） */
+}
+
+.pc_nav ul {
+  display: flex;
+}
+
+.pc_nav ul a {
+  display: block;
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 104px;
+  margin-right: 55px;
+}
+
+.pc_nav ul a:hover {
+  opacity: 0.8;
+}
+
+.pc_nav ul li:last-child a {
+  margin-right: 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+/* メッセージ */
+.main {
+  padding-top: 104px;
+}
+
+#message {
+  margin-bottom: 99px;
+}
+
+.message_en {
+  font-size: 30px;
+  margin-bottom: 53px;
+}
+
+.message_jp {
+  font-size: 82px;
+  line-height: 1.17; /* 行高96px/フォントサイズ82px */
+  margin-bottom: 42px;
+}
+
+.message_text {
+  font-size: 23px;
+  line-height: 1.65; /* 行高38px/フォントサイズ23px */
+}
+
+/* about */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 82px;
+  margin-bottom: 108px;
+}
+
+.about_img {
+  border-bottom-right-radius: 82.373px;
+}
+
+.about_text h2 {
+  width: 272.3936px;
+  margin-bottom: 59px;
+}
+
+.about_text h3 {
+  font-size: 44px;
+  line-height: 1.39; /* 行高61px/フォントサイズ44px */
+  margin-bottom: 34px;
+}
+
+.about_text p {
+  font-size: 16px;
+  line-height: 1.625; /* 行高26px/フォントサイズ16px */
+}
+
+/* メニュー */
+#menu {
+  margin-bottom: 100px;
+}
+
+#menu h2 {
+  margin-bottom: 48px;
+}
+
+#menu h2 img {
+  width: 151.3853px;
+}
+
+.menu_items {
+  display: flex;
+  justify-content: center;
+  gap: 49px;
+}
+
+.menu_item img {
+  border-top-right-radius: 41.643px;
+}
+
+.menu_item h3 {
+  font-size: 38px;
+  color: #d30202;
+  padding-left: 15px;
+  margin: -15px 0 20px; /* 写真に文字を被せる */
+}
+
+.menu_item p {
+  font-size: 17px;
+  line-height: 1.47; /* 行高25px/フォントサイズ17px */
+}
+
+/* ギャラリー */
+#gallery {
+  margin-bottom: 71px;
+}
+
+#gallery h2 {
+  margin-bottom: 27px;
+}
+
+#gallery h2 img {
+  width: 245.1846px;
+}
+
+/* イベント */
+#event {
+  margin-bottom: 80px;
+}
+
+#event h2 {
+  margin-bottom: 41px;
+}
+
+#event h2 img {
+  width: 173.8252px;
+}
+
+.event_posts {
+  font-size: 23px;
+  line-height: 1.96; /* 行高45px/フォントサイズ23px */
+  background: #fff;
+  padding: 38px 159px;
+  border: 3.6843px solid #4f260b;
+}
+
+.event_post {
+  display: flex;
+  gap: 43px;
+}
+
+.event_content {
+  text-decoration: underline;
+}
+
+/* アクセス */
+#access h2 {
+  margin-bottom: 41px;
+}
+
+#access h2 img {
+  width: 213.8354px;
+}
+
+.map {
+  position: relative;
+  height: 471.2641px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* フッター */
+footer {
+  background: #fff;
+  color: #000;
+  position: relative; /* page topボタン絶対位置 */
+}
+
+.footer_inner {
+  display: flex;
+  gap: 68px;
+  padding-top: 82px;
+  margin-bottom: 77px;
+}
+
+.footer_inner img {
+  width: 226.7686px;
+  height: 100%;
+}
+
+.info {
+  font-size: 20px;
+  line-height: 1.95; /* 行高39px/フォントサイズ20px */
+}
+
+.copy_right {
+  font-size: 16px;
+  padding-bottom: 78px;
+}
+
+/* ページトップボタン */
+.page_top a:hover {
+  opacity: 0.8;
+}
+
+.page_top img {
+  width: 125px;
+  width: 125px;
+}
+
+/*リンクを右下に固定*/
+.page_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(160px);
+}
+
+/*　上に上がる動き　*/
+.page_top.UpMove {
+  animation: UpAnime 0.3s forwards;
+}
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(160px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+.page_top.DownMove {
+  animation: DownAnime 0.3s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(160px);
+  }
+}
