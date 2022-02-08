@@ -144,7 +144,7 @@ footer {
 .menu_items {
   display: flex;
   justify-content: center;
-  gap: 49px;
+  gap: 5%; /* gap50px/幅1000px（img300px×3） */
 }
 
 .menu_item img {
