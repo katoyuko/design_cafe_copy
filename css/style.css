@@ -31,7 +31,6 @@ footer {
 /* ヘッダー */
 .header_logo {
   width: 226.7px;
-  padding-top: 19px;
 }
 
 .header_container {
@@ -45,6 +44,7 @@ footer {
   left: 0;
   width: 100%;
   box-sizing: border-box; /* paddingをとってwidthが100%なのでヘッダーとnavが内側に表示されるようにする（paddingとborderを幅と高さに含める） */
+  padding-top: 19px;
 }
 
 .pc_nav ul {
