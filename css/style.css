@@ -193,13 +193,13 @@ footer {
   font-size: 23px;
   line-height: 1.96; /* 行高45px/フォントサイズ23px */
   background: #fff;
-  padding: 38px 159px;
+  padding: 38px 16%; /* 左右padding159px/(幅1000ーborder3.6×2) */
   border: 3.6843px solid #4f260b;
 }
 
 .event_post {
   display: flex;
-  gap: 43px;
+  gap: 6%; /* 43/(幅1000ー(padding159×2+border3.6×2)) */
 }
 
 .event_content {
