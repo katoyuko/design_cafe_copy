@@ -104,7 +104,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 82px;
+  gap: 8%; /* gap80px/幅1000px */
   margin-bottom: 108px;
 }
 
