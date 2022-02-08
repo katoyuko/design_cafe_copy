@@ -237,13 +237,13 @@ footer {
 
 .footer_inner {
   display: flex;
-  gap: 68px;
+  gap: 6.8%; /* gap68px/幅1000px */
   padding-top: 82px;
   margin-bottom: 77px;
 }
 
 .footer_inner img {
-  width: 226.7686px;
+  width: 22.7%; /* width226.7px/幅1000px */
   height: 100%;
 }
 
