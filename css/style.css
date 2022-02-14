@@ -45,6 +45,7 @@ footer {
   width: 100%;
   box-sizing: border-box; /* paddingをとってwidthが100%なのでヘッダーとnavが内側に表示されるようにする（paddingとborderを幅と高さに含める） */
   padding-top: 19px;
+  z-index: 100;
 }
 
 .pc_nav ul {
@@ -329,6 +330,24 @@ footer {
     opacity: 1;
     transform: translateY(160px);
   }
+}
+
+/* スライダー */
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-dots li button:before {
+  color: #fff !important;
+  opacity: 0.9;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 1100px) {

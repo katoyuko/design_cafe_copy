@@ -8,11 +8,16 @@
     <meta name="description" content="DESIGN CAFEの公式サイトです。" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- スライダー -->
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <!-- スライダー -->
+    <script src="slick/slick.min.js"></script>
   </head>
   <body>
     <header id="top">
@@ -44,15 +49,35 @@
         </nav>
       </div>
       <div class="slider">
-        <!-- 画像をレスポンシブに切り替える -->
-        <picture>
-          <source
-            srcset="img/sp_main_vs@2x-100.jpg"
-            media="(max-width: 767px)"
-          />
-          <!-- <source>のどれにも条件が当てはまらなければ<img>を表示する -->
-          <img src="img/pc_first-100.jpg" alt="デザインカフェ 店内の様子" />
-        </picture>
+        <div class="slider_item">
+          <!-- 画像をレスポンシブに切り替える -->
+          <picture>
+            <source
+              srcset="img/sp_main_vs@2x-100.jpg"
+              media="(max-width: 767px)"
+            />
+            <!-- <source>のどれにも条件が当てはまらなければ<img>を表示する -->
+            <img src="img/pc_first-100.jpg" alt="デザインカフェ 店内の様子1" />
+          </picture>
+        </div>
+        <div class="slider_item">
+          <picture>
+            <source
+              srcset="img/sp_main_vs_2@2x-100.jpg"
+              media="(max-width: 767px)"
+            />
+            <img src="img/slider_2.jpg" alt="デザインカフェ 店内の様子2" />
+          </picture>
+        </div>
+        <div class="slider_item">
+          <picture>
+            <source
+              srcset="img/sp_main_vs_2@2x-100.jpg"
+              media="(max-width: 767px)"
+            />
+            <img src="img/slider_2.jpg" alt="デザインカフェ 店内の様子2" />
+          </picture>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -209,5 +234,6 @@
 
     <script src="js/page_top.js"></script>
     <script src="js/nav_menu.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
