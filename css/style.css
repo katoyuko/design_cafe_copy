@@ -201,6 +201,10 @@ footer {
   width: 245.1846px;
 }
 
+.gallery img {
+  width: 100%;
+}
+
 /* イベント */
 #event {
   margin-bottom: 80px;
