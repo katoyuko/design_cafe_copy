@@ -23,7 +23,7 @@ footer {
   text-align: center; /* コンテンツ中央揃え */
 }
 
-.content_width {
+.pc_content_width {
   max-width: 1000px; /* コンテンツ幅1000px  */
   padding: 0 10px; /* 横幅の最大値から10pxパディングをとってあげる */
 }
@@ -424,7 +424,11 @@ footer {
   }
 
   @media screen and (max-width: 767px) {
-    .content_width {
+    .pc_content_width {
+      padding: 0;
+    }
+
+    .sp_content_width {
       padding: 0 20px; /* コンテンツ幅 */
     }
 
@@ -514,6 +518,10 @@ footer {
       display: block;
     }
 
+    .menu_items img {
+      width: 100%;
+    }
+
     .menu_item h3 {
       font-size: 40px;
       margin: -15px 0 26px; /* 写真に文字を被せる */
@@ -533,7 +541,7 @@ footer {
     }
 
     #gallery h2 img {
-      margin-bottom: 142.2676px;
+      width: 142.2676px;
     }
 
     /* イベント */
