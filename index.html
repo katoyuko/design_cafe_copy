@@ -8,6 +8,11 @@
     <meta name="description" content="DESIGN CAFEの公式サイトです。" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="top">
@@ -27,9 +32,25 @@
             <li><a href="#access">ACCESS</a></li>
           </ul>
         </nav>
+        <div class="btn"><span></span></div>
+        <nav class="sp_nav content_center">
+          <ul>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#access">ACCESS</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="slider">
-        <img src="img/pc_first-100.jpg" alt="ヘッダー画像" />
+        <picture>
+          <source
+            srcset="img/sp_main_vs@2x-100.jpg"
+            media="(max-width: 767px)"
+          />
+          <img src="img/pc_first-100.jpg" alt="デザインカフェ 店内の様子" />
+        </picture>
       </div>
     </header>
     <main class="main">
@@ -37,14 +58,23 @@
         <p class="message_en">Have a happy day From a cup of coffee.</p>
         <p class="message_jp">ハッピーに溢れる1日を<br />1杯のコーヒーから。</p>
         <p class="message_text">
-          毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br />
-          足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+          毎日を丁寧に大切に過ごしたい。<br
+            class="br_sp"
+          />だからこそ一杯一杯丁寧にコーヒーを入れ<br />
+          足を運んでくれるお客さんには落ち着く空間と<br
+            class="br_sp"
+          />こだわりのコーヒーを提供したい。
         </p>
       </section>
       <section id="about" class="content_width">
+        <!-- spで表示 -->
+        <h2 class="sp_about content_center">
+          <img src="img/about_us@2x.png" alt="about" />
+        </h2>
         <img class="about_img" src="img/pc_about-100.jpg" alt="about us" />
         <div class="about_text">
-          <h2>
+          <!-- pcで表示 -->
+          <h2 class="pc_about">
             <img src="img/about_us@2x.png" alt="about" />
           </h2>
           <h3>私たちが提供する<br />こだわりのコーヒー</h3>
@@ -144,11 +174,6 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
     <script src="js/page_top.js"></script>
   </body>
 </html>
