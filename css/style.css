@@ -113,10 +113,6 @@ footer {
 
 /* about */
 #about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8%; /* gap80px/幅1000px */
   margin-bottom: 108px;
 }
 
@@ -124,8 +120,19 @@ footer {
   display: none;
 }
 
+.about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%; /* gap80px/幅1000px */
+}
+
 .about_img {
   width: 50%;
+  flex-shrink: 0;
+}
+
+.about_img img {
   border-bottom-right-radius: 82.373px;
 }
 
@@ -468,8 +475,11 @@ footer {
 
     /* about */
     #about {
-      display: block;
       margin-bottom: 29px;
+    }
+
+    .about_container {
+      display: block;
     }
 
     .sp_about {
@@ -483,8 +493,11 @@ footer {
 
     .about_img {
       width: 100%;
-      border-bottom-right-radius: 0; /* spは角丸なくす */
       margin-bottom: 35px;
+    }
+
+    .about_img img {
+      border-bottom-right-radius: 0; /* spは角丸なくす */
     }
 
     .pc_about {

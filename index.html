@@ -44,11 +44,13 @@
         </nav>
       </div>
       <div class="slider">
+        <!-- 画像をレスポンシブに切り替える -->
         <picture>
           <source
             srcset="img/sp_main_vs@2x-100.jpg"
             media="(max-width: 767px)"
           />
+          <!-- <source>のどれにも条件が当てはまらなければ<img>を表示する -->
           <img src="img/pc_first-100.jpg" alt="デザインカフェ 店内の様子" />
         </picture>
       </div>
@@ -74,16 +76,26 @@
         <h2 class="sp_about content_center">
           <img src="img/about_us@2x.png" alt="about" />
         </h2>
-        <img class="about_img" src="img/pc_about-100.jpg" alt="about us" />
-        <div class="about_text sp_content_width">
-          <!-- pcで表示 -->
-          <h2 class="pc_about">
-            <img src="img/about_us@2x.png" alt="about" />
-          </h2>
-          <h3>私たちが提供する<br />こだわりのコーヒー</h3>
-          <p>
-            サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-          </p>
+        <div class="about_container">
+          <div class="about_img">
+            <picture>
+              <source
+                srcset="img/about_us@2x-100.jpg"
+                media="(max-width: 767px)"
+              />
+              <img src="img/pc_about-100.jpg" alt="about us" />
+            </picture>
+          </div>
+          <div class="about_text sp_content_width">
+            <!-- pcで表示 -->
+            <h2 class="pc_about">
+              <img src="img/about_us@2x.png" alt="about" />
+            </h2>
+            <h3>私たちが提供する<br />こだわりのコーヒー</h3>
+            <p>
+              サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+            </p>
+          </div>
         </div>
       </section>
       <section id="menu" class="pc_content_width sp_content_width">
@@ -92,21 +104,39 @@
         </h2>
         <div class="menu_items">
           <div class="menu_item">
-            <img src="img/pc_menu_drink-100.jpg" alt="drink" />
+            <picture>
+              <source
+                srcset="img/drink_sp@2x-100.jpg"
+                media="(max-width: 767px)"
+              />
+              <img src="img/pc_menu_drink-100.jpg" alt="drink" />
+            </picture>
             <h3>Drink</h3>
             <p>
               ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
             </p>
           </div>
           <div class="menu_item">
-            <img src="img/pc_menu_food-100.jpg" alt="food" />
+            <picture>
+              <source
+                srcset="img/food_sp@2x-100.jpg"
+                media="(max-width: 767px)"
+              />
+              <img src="img/pc_menu_food-100.jpg" alt="food" />
+            </picture>
             <h3>Food</h3>
             <p>
               ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
             </p>
           </div>
           <div class="menu_item">
-            <img src="img/pc_menu_sweets-100.jpg" alt="sweets" />
+            <picture>
+              <source
+                srcset="img/cake_sp@2x-100.jpg"
+                media="(max-width: 767px)"
+              />
+              <img src="img/pc_menu_sweets-100.jpg" alt="sweets" />
+            </picture>
             <h3>Sweets</h3>
             <p>
               ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
