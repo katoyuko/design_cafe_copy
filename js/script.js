@@ -1,3 +1,37 @@
+$(function () {
+  // ナビゲーションバー
+  $(".btn, .sp_nav li a").click(function () {
+    $(".sp_nav").fadeToggle();
+    $(".btn").toggleClass("open");
+  });
+
+  // ファーストビューのスライダー
+  $(".slider").slick({
+    arrows: false,
+    autoplay: true,
+    dots: true,
+    pauseOnHover: false, //ホバーしたときにスライドを一時停止しない
+  });
+
+  // ギャラリーのスライダー
+  $(".gallery").slick({
+    autoplay: true,
+    pauseOnHover: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slideToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
+// ページトップ
 //スクロールした際の動きを関数でまとめる
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
