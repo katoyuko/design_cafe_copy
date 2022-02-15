@@ -21,7 +21,7 @@ $(function () {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768, // spは767以下、pcは768以上
         settings: {
           slidesToShow: 1,
           slideToScroll: 1,
