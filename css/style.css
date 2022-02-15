@@ -548,7 +548,7 @@ footer {
 
     .about_img {
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
     }
 
     .about_img img {
@@ -560,7 +560,7 @@ footer {
     }
 
     .about_text h3 {
-      font-size: 36px;
+      font-size: 33px;
       line-height: 1.25; /* 行高45px/フォントサイズ36px */
     }
 
@@ -663,12 +663,12 @@ footer {
     .footer_inner {
       display: block;
       padding-top: 47px;
-      margin-bottom: 47px;
+      margin-bottom: 44px;
     }
 
     .footer_inner img {
       width: 226.7676px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     .info {
