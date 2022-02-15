@@ -509,18 +509,18 @@ footer {
     }
 
     .message_en {
-      font-size: 16px;
+      font-size: 4.2vw;
       margin-bottom: 30px;
     }
 
     .message_jp {
-      font-size: 35px;
+      font-size: 8.5vw;
       line-height: 1.15; /* 行高44px/フォントサイズ38px */
       margin-bottom: 25px;
     }
 
     .message_text {
-      font-size: 16px;
+      font-size: 4vw;
       line-height: 1.87; /* 行高30px/フォントサイズ16px */
     }
 
